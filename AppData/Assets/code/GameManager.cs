@@ -3,6 +3,7 @@ using System.Collections;
 
 public class GameManager : MonoBehaviour 
 {
+	public const int MAX_KILL_COUNT = 1000000;
 
 	public GameObject ContinueButton;
 	public GameObject Page1;
@@ -27,7 +28,7 @@ public class GameManager : MonoBehaviour
 	{
 		Kills += Killrate;
 
-		if (Kills >= 1000000) 
+		if (Kills >= MAX_KILL_COUNT) 
 		{
 			Killrate = 0;
 			Money = 0;
@@ -60,14 +61,17 @@ public class GameManager : MonoBehaviour
 						Page2.SetActive(false);
 						ContinueButton.SetActive(false);
 						Weapon.SetActive(true);
+						return;
 					}
 					if(Page3.activeSelf)
 					{
 						Page3.SetActive(false);
 						Page1.SetActive(true);
+						return;
 					}
 				}
-				else if(hit.collider == Weapon.GetComponent<MeshCollider>())
+
+				if(hit.collider == Weapon.GetComponent<MeshCollider>())
 				{
 					Killrate += KillratePerWeapon;
 					Money += MoneyPerWeapon;
