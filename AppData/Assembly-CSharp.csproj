@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\code\ButtonClick.cs" />
      <Compile Include="Assets\code\GameManager.cs" />
      <Compile Include="Assets\code\PopUp.cs" />
      <Compile Include="Assets\code\yaranaika.cs" />

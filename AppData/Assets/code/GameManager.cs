@@ -77,6 +77,7 @@ public class GameManager : MonoBehaviour
 					Money += MoneyPerWeapon;
 					Instantiate(PopUpPrefab, PopUpPosition.position, PopUpPosition.rotation);
 					Yaranaika.GetComponent<yaranaika>().Activate();
+					Weapon.GetComponent<ButtonClick>().Click();
 				}
 			}
 
