@@ -1,10 +1,10 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\code\ButtonClick.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\code\GameManager.cs">
     <Files>
-      <File FileName="Assets\code\GameManager.cs" Line="61" Column="30" />
-      <File FileName="Assets\code\yaranaika.cs" Line="21" Column="28" />
-      <File FileName="Assets\code\ButtonClick.cs" Line="18" Column="1" />
+      <File FileName="Assets\code\GameManager.cs" Line="11" Column="26" />
+      <File FileName="Assets\code\yaranaika.cs" Line="11" Column="1" />
+      <File FileName="Assets\code\ButtonClick.cs" Line="10" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
